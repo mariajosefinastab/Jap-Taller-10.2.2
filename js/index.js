@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded"), () => {
 
-    let datoIngresado = localStorage.getItem("inputText");
+    document.getElementById("buttonText").addEventListener("click", function(){
+    let inputText = document.getElementById("inputText").value;
 
-    document.getElementById("buttonText").addEventListener("click", () => {
-    let datoAMostrar = document.getElementById("inputText");
+    localStorage.setItem("storedText", inputText); //guarda en localstorage
+
+    document.getElementById("inputText").value = "";
 });
-}
 
